@@ -1,7 +1,7 @@
 <template>
   <div>
     <Heading />
-    <div class="buttonFilters">
+    <div>
       <Button v-for="item in buttonItems" :item="item.filter" :key="item.filter" :onClick="() => FilterAnimals(item.filter)" />
     </div>
     <div v-for="animal in animals" :key="animal.id" class="animalCards">
